@@ -8,7 +8,7 @@ def gross_for_director(director_data)
     counter3 = 0
     size_director = director_data[:movies].size 
     while counter3 < size_director do 
-      sum = sum + nds[counter2][:movies][counter3][:worldwide_gross]
+      sum = sum + director_data[:movies][counter3][:worldwide_gross]
       counter3 += 1 
     end
     sum
